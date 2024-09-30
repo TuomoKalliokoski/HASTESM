@@ -39,6 +39,7 @@ hastesm -c my_copy_of_example_config.txt
 
 To update to the latest version:
 
+```
 pip install --upgrade git+https://github.com/username/repo-name.git
 ```
 
