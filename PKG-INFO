@@ -1,0 +1,230 @@
+Metadata-Version: 2.3
+Name: hastesm
+Version: 0.7.1
+Summary: Tool for molecule shape similarity searching
+Author-email: Samuli Näppi <samuli.nappi@orionpharma.com>, Tuomo Kalliokoski <tuomo.kalliokoski@orionpharma.com>
+Maintainer-email: Tuomo Kalliokoski <tuomo.kalliokoski@orionpharma.com>
+License: HASTESM
+        
+        Copyright (c) 2024 Orion Corporation
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        1. Redistributions of source code must retain the above copyright notice,
+        this list of conditions and the following disclaimer.
+        2. Redistributions in binary form must reproduce the above copyright notice,
+        this list of conditions and the following disclaimer in the documentation
+        and/or other materials provided with the distribution.
+        3. Neither the name of the copyright holder nor the names of its contributors
+        may be used to endorse or promote products derived from this software
+        without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+        ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+        LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+        CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+        SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+        INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+        CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+        ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+        POSSIBILITY OF SUCH DAMAGE.
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: GPU :: NVIDIA CUDA :: 12 :: 12.1
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Requires-Python: <4.0,>=3.11
+Requires-Dist: aimsim-core==2.2.2
+Requires-Dist: aiohappyeyeballs==2.4.0
+Requires-Dist: aiohttp==3.10.5
+Requires-Dist: aiosignal==1.3.1
+Requires-Dist: astartes[molecules]==1.3.0
+Requires-Dist: attrs==24.2.0
+Requires-Dist: chemprop==2.0.4
+Requires-Dist: configargparse==1.7
+Requires-Dist: dill==0.3.8
+Requires-Dist: filelock==3.15.4
+Requires-Dist: frozenlist==1.4.1
+Requires-Dist: fsspec[http]==2024.6.1
+Requires-Dist: idna==3.8
+Requires-Dist: jinja2==3.1.4
+Requires-Dist: joblib==1.4.2
+Requires-Dist: lightning-utilities==0.11.6
+Requires-Dist: lightning==2.4.0
+Requires-Dist: markupsafe==2.1.5
+Requires-Dist: mhfp==1.9.6
+Requires-Dist: mordredcommunity==2.0.6
+Requires-Dist: mpmath==1.3.0
+Requires-Dist: multidict==6.0.5
+Requires-Dist: multiprocess==0.70.16
+Requires-Dist: networkx==3.3
+Requires-Dist: numpy==1.26.4
+Requires-Dist: nvidia-cublas-cu12==12.1.3.1
+Requires-Dist: nvidia-cuda-cupti-cu12==12.1.105
+Requires-Dist: nvidia-cuda-nvrtc-cu12==12.1.105
+Requires-Dist: nvidia-cuda-runtime-cu12==12.1.105
+Requires-Dist: nvidia-cudnn-cu12==9.1.0.70
+Requires-Dist: nvidia-cufft-cu12==11.0.2.54
+Requires-Dist: nvidia-curand-cu12==10.3.2.106
+Requires-Dist: nvidia-cusolver-cu12==11.4.5.107
+Requires-Dist: nvidia-cusparse-cu12==12.1.0.106
+Requires-Dist: nvidia-nccl-cu12==2.20.5
+Requires-Dist: nvidia-nvjitlink-cu12==12.6.20
+Requires-Dist: nvidia-nvtx-cu12==12.1.105
+Requires-Dist: packaging==24.1
+Requires-Dist: padelpy==0.1.16
+Requires-Dist: pandas==2.2.2
+Requires-Dist: pillow==10.4.0
+Requires-Dist: psutil==6.0.0
+Requires-Dist: python-dateutil==2.9.0.post0
+Requires-Dist: pytorch-lightning==2.4.0
+Requires-Dist: pytz==2024.1
+Requires-Dist: pyyaml==6.0.2
+Requires-Dist: rdkit==2024.3.5
+Requires-Dist: scikit-learn==1.5.1
+Requires-Dist: scipy==1.14.1
+Requires-Dist: setuptools==73.0.1
+Requires-Dist: six==1.16.0
+Requires-Dist: sympy==1.13.2
+Requires-Dist: tabulate==0.9.0
+Requires-Dist: threadpoolctl==3.5.0
+Requires-Dist: torch==2.4.0
+Requires-Dist: torchmetrics==1.4.1
+Requires-Dist: tqdm==4.66.5
+Requires-Dist: triton==3.0.0
+Requires-Dist: typing-extensions==4.12.2
+Requires-Dist: tzdata==2024.1
+Requires-Dist: yarl==1.9.4
+Description-Content-Type: text/markdown
+
+Placeholder asennus ohjeet github julkaisulle:
+
+# Installing HASTESM from GitHub
+
+This package is not available on PyPI but can be installed directly from GitHub. Follow these steps to install the package:
+
+1. Ensure you have Python 3.11 or newer installed on your Linux system.
+
+2. Make sure you have pip installed and updated:
+   ```
+   python -m pip install --upgrade pip
+   ```
+
+3. Install the package directly from GitHub using pip:
+   ```
+   pip install git+https://github.com/username/repo-name.git
+   ```
+
+4. After installation, you can run the application using:
+   ```
+   hastesm
+   ```
+
+Note: This package requires SLURM, CUDA support and is designed to run on Linux systems only. Ensure your system meets these requirements before installation.
+
+## Updating the Package
+
+To update to the latest version:
+
+```
+pip install --upgrade git+https://github.com/username/repo-name.git
+```
+
+## For Developers
+
+If you're planning to develop or modify the package, you might want to install it in editable mode:
+
+```
+git clone https://github.com/username/repo-name.git
+cd repo-name
+pip install -e .
+```
+
+# Vanha viimeisen version README:
+
+# Installation
+
+```
+source /data/programs/oce/actoce
+conda create -n hastesm python=3.11
+conda activate hastesm
+mamba install pytorch pytorch-cuda=12.1 -c pytorch -c nvidia
+cd INSTALL_PATH/
+pip install -e .
+```
+where INSTALL_PATH is the directory which contains the hastesm package and this README file.
+
+Test that the installation works with `which hastesm` and `which chemprop`
+
+Set:
+```
+--init-conda "source /data/programs/oce/actoce"
+--activate-conda "conda activate hastesm"
+```
+in
+`/data/programs/hastesm/hastesm/default_config.txt`
+
+# Usage
+
+Default configuration can be found in:
+`INSTALL_PATH/hastesm/hastesm/default_config.txt`
+
+Many arguments may only need to be set once:
+
+- Conda commands:
+```
+--init-conda
+--activate-conda
+```
+- Maestro format version:
+```
+--mae-format-version
+```
+- Slurm partitions:
+```
+--cpu-partition
+--gpu-partition
+```
+
+Modify the above arguments in the default_config.txt
+
+Others need to be set depending on the dataset and desired cluster resources, see `example_config.txt`.
+
+### output_dir
+
+Outputs, logs, and results of intermediate steps are stored in `output_dir`, which must be accessible to *every* compute node the SLURM scripts will be executed on.
+It should therefore be stored on a network drive (AWS: /home, LOCAL: /data). To avoid conflicts with other HASTESM searches, the directory should be empty prior to execution.
+If the output directory exists but the task log is empty, the directory is overwritten.
+
+
+### local_dir
+
+Since file transfers and accesses on the network drive are slow, the SLURM scripts generated and executed by HASTESM proceed as follows:
+1. Copy/Move compressed inputs from `output_dir` to `local_dir`.
+2. Decompress the inputs and run the computation.
+3. Compress the results and move them back to `output_dir`.
+
+
+### start-from
+
+`--start-from` can be used to continue the workflow from any given checkpoint provided that the previous stages have completed successfully.
+
+if start_from is 'next', the task log is checked for previously completed tasks and the next is completed. If all tasks have been completed, the program exits.
+
+If no argument (or the default argument "prepare_db") is provided, the job starts from the beginning.
+
+### input-smi
+
+Can be a gzip compressed CSV file (extension .smi .csv does not matter) with the format: `SMILES{delim}ID`. For example, two rows could be:
+```
+O=C=O ID1
+C=C ID2
+```
+ID is interpreted as a string.
+
+If the file has a header row, pass the argument `--header` to skip over it.

@@ -1,0 +1,33 @@
+#############################
+# Search settings
+#############################
+
+--pred-cpu     500
+--conf-cpu     500
+--search-cpu   40
+
+# How many mols to align actually in 3D
+--mols-iter1     1000000
+--mols-iter2     2000000
+
+# Similarity cutoff for aligned mols
+--cutoff      0.75
+
+# These should be unique to this job
+--name example
+--output-dir /home/my_name/my_project/hastesm_output
+
+# The query given to SCHRODINGER shape_screen. Must be stored on the network drive.
+--query /home/my_name/my_project/my_query.sdf
+
+# HASTESM SMILES file can be stored on the local drive of the computer used to start HASTESM.
+# The argument can be omitted if the DB already exists.
+--input-smi /home/my_name/big.smi
+
+# HASTESM database must be stored on the network drive. --db is the Path to the HASTESM DB.
+# It does not need to exist to run HASTESM.
+--db /home/my_name/my_project/example.db
+
+
+# If input_smi uses a delimiter other than a space " ", provide it with `--delim` (use quotes around the character(s))
+
