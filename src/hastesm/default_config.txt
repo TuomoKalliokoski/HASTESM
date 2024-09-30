@@ -1,0 +1,33 @@
+# Conda environment
+--init-conda  "source /home/shared/aws_oce/actoce"
+--activate-conda "conda activate hastesm-0.9"
+
+# Maestro format version
+--mae-format-version "2.0.0"
+
+# Slurm partitions and disk settings
+--cpu-partition cpu
+--gpu-partition gpu-t4-1
+--local-dir /scratch
+
+# Number of CPUs to use to by default
+--pred-cpu    500
+--conf-cpu    500
+--search-cpu   48
+
+# default mol sizes
+--mols-iter1    1000000
+--mols-iter2    2000000
+--predchunksize 10000
+
+# Similarity cutoffs
+--cutoff      0.75
+--pred-cutoff 0.60
+
+# confgen settings
+--energywindow 25.0
+--numconfs     50
+--maxrotbond   10
+--sample       rapid
+--amide        trans
+# --minimize (store_true)
