@@ -22,7 +22,7 @@ conda activate hastesm-0.9
 mamba install pytorch=2.4.1 pytorch-cuda=12.1 -c pytorch -c nvidia -y
 pip install chemprop==2.0.4
 mamba install pigz=2.6 -y
-pip install git+https://github.com/username/repo-name.git
+pip install git+https://github.com/TuomoKalliokoski/HASTESM
 ```
 
 Edit file default_config.txt in the installation to match your environment.
@@ -40,7 +40,7 @@ hastesm -c my_copy_of_example_config.txt
 To update to the latest version:
 
 ```
-pip install --upgrade git+https://github.com/username/repo-name.git
+pip install --upgrade git+https://github.com/TuomoKalliokoski/HASTESM
 ```
 
 ## For Developers
@@ -48,7 +48,7 @@ pip install --upgrade git+https://github.com/username/repo-name.git
 If you're planning to develop or modify the package, you might want to install it in editable mode:
 
 ```
-git clone https://github.com/username/repo-name.git
+git clone https://github.com/TuomoKalliokoski/HASTESM
 cd repo-name
 pip install -e .
 ```
