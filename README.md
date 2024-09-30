@@ -1,6 +1,6 @@
 HASTESM version 0.9
 
-Written by Samuli Näppi and Tuomo Kalliokoski, Orion Pharma
+Written by Samuli Näppi and Tuomo Kalliokoski, Orion Pharma.
 This software is meant to be run at Orion AWS cloud environment, but
 you may find it useful nevertheless.
 
@@ -8,7 +8,7 @@ Additional software requirements:
 You need also Schrödinger Suite (Phase/LigPrep and shape_matching) and
 slurm. 
 
-Hardware recommendedations: 500 CPU cores for confgen / machine learning
+Hardware: 500 CPU cores for confgen / machine learning
 prediction, 1 GPU for machine learning training and 40 CPU cores for
 shape matching.
 
