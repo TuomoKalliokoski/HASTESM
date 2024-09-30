@@ -25,7 +25,7 @@ mamba install pigz=2.6 -y
 pip install git+https://github.com/TuomoKalliokoski/HASTESM
 ```
 
-Edit file default_config.txt in the installation to match your environment.
+Edit file $CONDA_PREFIX/lib/python3.11/site-packages/hastesm/default_config.txt in the installation to match your environment.
 
 ## Running the software
 
